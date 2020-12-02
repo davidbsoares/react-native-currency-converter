@@ -9,7 +9,7 @@ import { FirstRowItem, RowItem, RowSeparator } from '../components/RowItem';
 
 const openUrl = (url) =>{
     Linking.openURL(url).catch(()=>{
-        Alert.alert('Sorry, something went wrong.', "Please, try again later.")
+        Alert.alert('Desculpe, algo deu errado.', "Por Favor, tente novamente.")
     });
 
 }
@@ -21,7 +21,7 @@ export default () => {
         
         <ScrollView>
             <RowItem
-                text="Themes"
+                text="Temas"
                 onPress={() => alert('todo!')}
                 rightIcon={<Entypo name="chevron-right" size={20} color={colors.blue} />}
             />            
@@ -29,7 +29,7 @@ export default () => {
             <RowSeparator />
 
             <RowItem
-                text="React Native Basics"
+                text="O Básico sobre React Native"
                 onPress={() => openUrl('https://learn.reactnativeschool.com/p/react-native-basics-build-a-currency-converter')}
                 rightIcon={<Entypo name="export" size={20} color={colors.blue} />}
             />
@@ -37,7 +37,7 @@ export default () => {
             <RowSeparator />
 
             <RowItem
-                text="React Native by Example"
+                text="Exemplos de React Native"
                 onPress={() => openLink('https://reactnativebyexample.com')}
                 rightIcon={<Entypo name="export" size={20} color={colors.blue} />}
             />
